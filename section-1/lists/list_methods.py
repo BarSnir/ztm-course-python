@@ -36,5 +36,3 @@ print(f"Remove item value from index {index}:", remove_item)
 # Clear method
 basket.clear()
 print(f"Remove all items", basket)
-
-

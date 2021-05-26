@@ -24,5 +24,26 @@ print("Set default:", some_dict.get("None-exists-key", "exists"), "\n")
 
 
 # Creating new dict
-user = dict(name="Bar")
+user = dict(name="Bar", price=1000)
 print("Creating dict from dict():", user, "\n")
+
+print("check key in dict:", "size" in user, "\n")
+print("check value in dict:", "Bar" in user.values(), "\n")
+print("get the items in dict:", user.items(), type(user.items()), "\n")
+
+
+# Copying
+user2 = user.copy()
+print("Copying an dict:", user, "(user)", user2, "(user2)", "\n")
+
+# Update
+user2.update({"name": "john"})
+print("After updating name key in user2:", user2, "\n")
+
+# Pop key & value
+user.pop("name")
+print("user after poping name:", user, "\n")
+
+# Clear dictionary
+user.clear()
+print("Cleaning: ", user, "\n")
